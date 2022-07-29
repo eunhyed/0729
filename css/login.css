@@ -1,0 +1,299 @@
+@charset "utf-8";
+
+*{
+    margin:0 auto;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Noto Sans KR', sans-serif;
+    list-style:none;
+}
+
+a{
+    text-decoration:none;
+    color:#333;
+    display:block;
+}
+
+img{
+    display:block;
+    max-width:100%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    max-width:100%;
+    background:#eee;
+    color:#333;
+}
+
+/*header*/
+header{
+    position:relative;
+}
+
+nav{
+    width:100%;
+    background:#fff;
+    display:flex;
+    align-items:center;
+    position:fixed;
+    padding:0.5%;
+    box-shadow:0px 0px 8px rgba(0, 0, 0, 0.616);
+}
+
+.logo{
+    width:7%;
+    margin-left:46%;
+}
+
+.logo img{
+    max-width:100%;
+}
+
+.navi{
+    width:25%;
+    margin-left:-5%;
+    font-size:13px;
+    display:flex;
+}
+
+.navi li a:hover{
+    color:rgb(45, 141, 36);
+    font-weight:bold;
+}
+
+.ham{
+    position:absolute;
+    left:90%;
+    font-size:1.2rem;
+    display:none;
+    cursor:pointer;
+}
+
+/*main*/
+main{
+    padding-top:22vh;
+}
+/*로그인 폼*/
+h1{
+    max-width:100%; 
+    margin-bottom:7%;
+}
+
+.login-form{
+    max-width:55%;
+    margin:auto;
+    padding:5% 10%;
+    text-align:center;
+    border:none;
+    border-radius:5px;
+    background:#fff;
+    margin-bottom:7%;
+}
+
+.text-field{
+    font-size:14px;
+    padding:2%;
+    width:85%;
+    margin-bottom:2%;
+    border-radius:5px;
+    border:1px solid #eee;
+}
+
+.submit-btn{
+    font-size:14px;
+    border:none;
+    padding:1%;
+    width:85%;
+    background:#999;
+    margin-bottom:4%;
+    margin-top:5%;
+    border-radius:5px;
+    font-weight:bold;
+    line-height:200%;
+    color:#eee;
+    cursor:pointer;
+}
+
+.links{
+    text-align:center;
+    font-size:12px;
+}
+
+.links a{
+    color:#333;
+}
+
+/*sns로그인*/
+.linkss{
+    display:flex;
+    margin:6% 0;
+    font-size:12px;
+}
+
+.linkss a{
+    width:60%;
+}
+
+.sns{
+    margin-top:10%;
+
+}
+
+.hrs{
+    display:flex;
+    align-items:center;
+    font-size:11px;
+}
+
+hr{
+    height:1px;
+    width:25%;
+}
+
+.sns button{
+    display:flex;
+    padding:3%;
+    width:85%;
+    margin-top:3%;
+    border:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+#kakao{
+    font-size:14px;
+    background:#fee500;
+    cursor:pointer;
+}
+
+#naver{
+    font-size:14px;
+    background:#03c75a;
+    cursor:pointer;
+    color:#fff;
+}
+
+/*aside*/
+aside{
+    width:100%;
+    padding:1% 15%;
+    display:flex;
+    border-top:1px solid #888;
+    background:#fff;
+}
+
+aside ul{
+    margin-left:0;
+    line-height:200%;
+    display:flex;
+}
+
+.familysite{
+    margin:0;
+}
+
+/*footer*/
+footer{
+    font-size:12px;
+    padding:2% 17%;
+    width:100%;
+    border-top:1px solid #888;
+    padding-bottom:5%;
+    background:#fff;
+}
+
+#topbtn{
+    position:fixed;
+    right:10%;
+    bottom:50px;
+    font-size:1.5rem;
+    display:none;
+    color:#30864a;
+    z-index:999;
+}
+
+#topbtn img{
+    width:70%;
+    border-radius: 5px 40px 40px  5px ;
+    background:#45915c77;
+}
+
+
+/*미디어쿼리*/
+@media screen and (max-width:768px){
+    /*header*/
+    header{
+        border-bottom:1px solid #eee;
+    }
+    nav{
+        position:relative;
+        box-shadow:none;
+        padding:2%;
+    }
+
+    .navi{
+        position:absolute;
+        width:100%;
+        flex-direction:column;
+        margin-left:0;
+        top:100%;
+        background:#fff;
+        height:100vh;
+        line-height:400%;
+        display:none;
+        z-index:5;
+    }
+
+    .logo{
+        width:22%;
+        margin-left:38%;
+    }
+
+    .logo img{
+        max-width:100%;
+    }
+
+    .ham{
+        display:block;
+    }
+    /*main*/
+    main{
+        padding-top:0%;
+    }
+    /*로그인폼*/
+    .login-form{
+        max-width:100%;
+        margin-bottom:0;
+    }
+
+    /*aside*/
+    aside{
+        flex-direction:column;
+        width:100%;
+        padding:3%;
+    }
+
+    aside ul{
+        width:100%;
+        font-size:12px;
+    }
+
+    .familysite{
+        width:100%;
+        margin-top:2%;
+    }
+
+    /*topbtn*/
+    #topbtn{
+        right:-8%;
+        max-width:30%;
+    }
+
+    #topbtn img{
+        background:none;
+    }
+}

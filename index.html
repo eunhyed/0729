@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>새미네부엌</title>
+
+    <script src="https://kit.fontawesome.com/9575841a1c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!--경고창 디자인-->
+
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+    <!--<script src="js/popup.js"></script>-->
+
+    <script>
+        /*familysite*/
+            function copyrtChgUrl(url){     
+            if(url){
+            window.open(url);
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <div id="layout">
+        <header>
+            <nav>
+                <a href="index.html" class="logo"><img src="images/logo1.PNG" alt="로고"></a>
+
+                <ul class="navi" id="navi">
+                    <li><a href="#a">요리상담소</a><i class="fa-solid fa-caret-down"></i>
+                        <ul class="submenu">
+                            <li><a href="#">안녕</a></li>
+                            <li><a href="#">안녕</a></li>
+                            <li><a href="#">안녕</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#b">요리법 연구소</a><i class="fa-solid fa-caret-down"></i>
+                        <ul class="submenu">
+                            <li><a href="#">안녕</a></li>
+                            <li><a href="#">안녕</a></li>
+                            <li><a href="#">안녕</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#c">요리해요</a><i class="fa-solid fa-caret-down"></i>
+                        <ul class="submenu">
+                            <li><a href="#">안녕</a></li>
+                            <li><a href="#">안녕</a></li>
+                            <li><a href="#">안녕</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#d">맛있는 추억</a><i class="fa-solid fa-caret-down"></i>
+                        <ul class="submenu">
+                            <li><a href="#">안녕</a></li>
+                            <li><a href="#">안녕</a></li>
+                            <li><a href="#">안녕</a></li>
+                        </ul>
+                    </li>
+                    <li class="menupng"><a href="#e"><img src="images/menu2.PNG" alt="wow">이벤트</a><i class="fa-solid fa-caret-down"></i>
+                        <ul class="submenu">
+                            <li><a href="#">안녕</a></li>
+                            <li><a href="#">안녕</a></li>
+                            <li><a href="#">안녕</a></li>
+                        </ul>
+                    </li>
+
+                    <div class="searchmom">
+                        <div class="search-mode">
+                            <input type="search" placeholder="&#xf002;">
+                        
+                            <div class="icon">
+                              <div class="plus-option">
+                                <i class="fas fa-keyboard"></i>
+                                <i class="fas fa-microphone"></i>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            
+
+
+                
+
+                <div class="topbtn">
+                    <!--<button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>-->
+                   <button type="button" onclick="location.href = 'login.html' "><i class="fa-solid fa-user"></i></button>
+               </div>
+            </nav>
+
+    <!--더보기아이콘-->
+    <button type="button" id="ham"><i class="fa-solid fa-align-right"></i></button>
+    <button type="button" id="close"><i class="fa-solid fa-xmark"></i></button>
+
+    <div id="imgslidea">
+        <div class="imgslide">
+            <a href="#"><img src="images/event.jpg" alt="imgslide"></a>
+            <a href="#"><img src="images/event1.jpg" alt="imgslide"></a>
+            <a href="#"><img src="images/event2.PNG" alt="imgslide"></a>
+        </div>
+    </div>
+
+    <div class="btnslide">
+        <button type="button" class="orange"></button>
+        <button type="button" class="slidebutton2"></button>
+        <button type="button" class="slidebutton3"></button>
+    </div>
+    </header>
+
+    <main>
+        <section class="cook" id="a">
+            <h2>언제 어디서나 쉽게 요리해요</h2>
+
+            <div class="imgs1a">
+                <a href="#">
+                    <div class="imgs1">
+                        <img src="images/care.jpg" alt="1">
+                        <h3>부침개 논란 종결, 해물파전/김치전 반반</h3>
+                        <span id="alertStart1"><i class="fa-regular fa-heart">89</i></span>
+                        <span><i class="fa-regular fa-comment">918</i></span>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="imgs1">
+                        <img src="images/tang.jpg" alt="2">
+                        <h3>3분컷! 컵라면보다 빨리 만드는 보쌈 김치가 여기 있었네!</h3>
+                        <span id="alertStart2"><i class="fa-regular fa-heart">33</i></span>
+                        <span><i class="fa-regular fa-comment">67</i></span>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="imgs1">
+                        <img src="images/duck.jpg" alt="3">
+                        <h3>계란 10개로 만드는 일주일 반찬!</h3>
+                        <span id="alertStart3"><i class="fa-regular fa-heart">20</i></span>
+                        <span><i class="fa-regular fa-comment">23</i></span>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="imgs1">
+                        <img src="images/pizza.jpg" alt="4">
+                        <h3>이거 하나면 맛있는 비빔박 뚝딱</h3>
+                        <span id="alertStart4"><i class="fa-regular fa-heart">23</i></span>
+                        <span><i class="fa-regular fa-comment">383</i></span>
+                    </div>
+                </a>
+
+
+            </div>
+        </section>
+
+        <section class="qna" id="b">
+            <h2>요린이 고민, 요리 전문가와 함께 한큐에 해결!</h2>
+            <div class="bg">
+
+                <div class="bgimg">
+                    <img src="images/beg.jpg" alt="오이">
+                </div>
+
+                <div class="bgtext">
+                    <h3>요즘 시국에 집콕하면서 하루종일 아이랑 뭘 해야 할지 모르겠어요.</h3>
+                    <button type="button" id="alertStart5"><i class="fa-regular fa-heart">2883</i></button>-->
+                    <button type="button"><i class="fa-regular fa-comment">503</i></button>
+
+                    <a href="#">자세히보기</a>
+                </div>
+            </div>
+
+            <div class="check">
+                <div class="text1">
+                    <p>처음으로 아내를 위해 끓여주는 미역국, 성공하려면?</p>
+                    <button type="button" id="alertStart6"><i class="fa-regular fa-heart">1883</i></button>
+                    <button type="button"><i class="fa-regular fa-comment">1289</i></button>
+                </div>
+
+                <div class="text1">
+                    <p>음식 나눔 해보신적 있나요?</p>
+                    <button type="button" id="alertStart7"><i class="fa-regular fa-heart">124</i></button>
+                    <button type="button"><i class="fa-regular fa-comment">13</i></button>
+                </div>
+
+                <div class="text1">
+                    <p>남자친구 휴가 때 간단하게 만들만 한 음식 있을까요?</p>
+                    <button type="button" id="alertStart8"><i class="fa-regular fa-heart">23</i></button>
+                    <button type="button"><i class="fa-regular fa-comment">56</i></button>
+                </div>
+
+                <div class="text1">
+                    <p>아빠의 첫 제사상, 뭘 어떻게 준비해야 해요? 도와주세요.</p>
+                    <button type="button" id="alertStart9"><i class="fa-regular fa-heart">33</i></button>
+                    <button type="button"><i class="fa-regular fa-comment">45</i></button>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="recipe" id="c">
+            <h2>다양한 요리 레시피 다 모였어요</h2>
+
+            <div class="imgsmom">
+                <a href="#">
+                    <div class="imgstext1">
+                        <img src="images/egg.jpg" alt="1">
+                        <h3>부침개 논란 종결, 해물파전/김치전 반반</h3>
+                        <p>맛있게 요리해요</p>
+                        <span><i class="fa-regular fa-heart">1883</i></span>
+                        <span><i class="fa-regular fa-comment">1289</i></span>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="imgstext1">
+                        <img src="images/rice.jpg" alt="1">
+                        <h3>부침개 논란 종결, 해물파전/김치전 반반</h3>
+                        <p>아이가 좋아하는 요리 모아모아</p>
+                        <span><i class="fa-regular fa-heart">23</i></span>
+                        <span><i class="fa-regular fa-comment">4</i></span>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="imgstext1">
+                        <img src="images/galbi.jpg" alt="1">
+                        <h3>부침개 논란 종결, 해물파전/김치전 반반</h3>
+                        <p>이것만 있으면 밥 뚝딱</p>
+                        <span><i class="fa-regular fa-heart">59</i></span>
+                        <span><i class="fa-regular fa-comment">9</i></span>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="imgstext1">
+                        <img src="images/pish.jpg" alt="1">
+                        <h3>부침개 논란 종결, 해물파전/김치전 반반</h3>
+                        <p>따끈따끈 포슬포슬 감자밥</p>
+                        <span><i class="fa-regular fa-heart">93</i></span>
+                        <span><i class="fa-regular fa-comment">40</i></span>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="imgstext1">
+                        <img src="images/carrert.jpg" alt="1">
+                        <h3>부침개 논란 종결, 해물파전/김치전 반반</h3>
+                        <p>잡채가 이렇게 쉬워요!</p>
+                        <span><i class="fa-regular fa-heart">83</i></span>
+                        <span><i class="fa-regular fa-comment">78</i></span>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="imgstext1">
+                        <img src="images/job.jpg" alt="1">
+                        <h3>부침개 논란 종결, 해물파전/김치전 반반</h3>
+                        <p>특별하고 재밌게 만들어요</p>
+                        <span><i class="fa-regular fa-heart">42</i></span>
+                        <span><i class="fa-regular fa-comment">239</i></span>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="imgstext1">
+                        <img src="images/pasta.jpg" alt="1">
+                        <h3>부침개 논란 종결, 해물파전/김치전 반반</h3>
+                        <p>겉바속촉 와플팬 호박전</p>
+                        <span><i class="fa-regular fa-heart">283</i></span>
+                        <span><i class="fa-regular fa-comment">10</i></span>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="imgstext1">
+                        <img src="images/jun.jpg" alt="1">
+                        <h3>부침개 논란 종결, 해물파전/김치전 반반</h3>
+                        <p>닭갈비도 쉽지요</p>
+                        <span><i class="fa-regular fa-heart">493</i></span>
+                        <span><i class="fa-regular fa-comment">1389</i></span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="event" id="d">
+            <h2><img src="images/menu.PNG" alt="WOW">이벤트</h2>
+
+            <div class="eventmom">
+                <div class="event1">
+                    <a href="#">
+                        <figure>
+                            <img src="images/sungwo.PNG" alt="1">
+                            <figcaption><img src="images/logo1.PNG" alt="로고"></figcaption>
+                        </figure>
+
+                        <h3>승우 아빠와 함께 맛있는 가족 요리를 직접 만들어봐요!</h3>
+                        <span>2022.07.08 ~ 2022.07.28</span>
+                    </a>
+
+                </div>
+
+                <div class="event1">
+                    <a href="#">
+                        <figure>
+                            <img src="images/oh.PNG" alt="1">
+                            <figcaption><img src="images/logo1.PNG" alt="로고"></figcaption>
+                        </figure>
+
+                        <h3>새미의 쿠킹 키트 인증 이벤트</h3>
+                        <span>2022.07.08 ~ 2022.07.28</span>
+                    </a>
+
+                </div>
+
+                <div class="event1">
+                    <a href="#">
+                        <figure>
+                            <img src="images/child.PNG" alt="1">
+                            <figcaption><img src="images/logo1.PNG" alt="로고"></figcaption>
+                        </figure>
+                        <h3>영상보고 퀴즈 참여하면 새미네마켓 할인 쿠폰을 드려요</h3>
+                        <span>오픈예정</span>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <aside id="e">
+        <ul>
+            <li><a href="#">맛추억 문의</a> |</li>
+            <li><a href="#">이용약관</a> |</li>
+            <li><a href="#">개인정보처리방침</a> |</li>
+            <li><a href="#">1:1문의</a></li>
+        </ul>
+    
+            <select class="familysite" onchange="copyrtChgUrl(this.value)">
+                <option value="0">Familysite</option>
+                <option value="https://www.sempio.com">샘표식품</option>
+                <option value="http://www.tasiakitchen.co.kr/default/">티아시아 키친</option>
+                <option value="https://sempio.recruiter.co.kr/appsite/company/index">샘표채용</option>
+            </select>
+        
+    </aside>
+
+    <footer>
+        <p>
+            샘표식품(주) | 주소 : 서울특별시 중구 충무로2
+            (우편번호 : 04557) | 맛추억 운영 사무국 : 02-3393-5645 ~ 7 (평일 : 9:00 ~ 17:00 / 점심시간 12:30 ~ 13:30)
+            Copyright ⓒ 샘표식품, All Rights Reserved.
+        </p>
+    </footer>
+    </div>
+
+    <a href="#" id="topbtn"><img src="images/logo2.PNG"></a>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>새미네 부엌|로그인</title>
+
+    <script src="https://kit.fontawesome.com/9575841a1c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!--경고창 디자인-->
+
+    <link href="css/login.css" rel="stylesheet">
+    <script src="js/login.js"></script>
+</head>
+
+<body>
+    <div id="layout">
+        <header>
+            <nav>
+                <div class="ham"><i class="fa-solid fa-align-right"></i></div>
+
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo1.PNG" alt="logo"></a>
+                </div>
+
+                <ul class="navi">
+                    <li><a href="login.html">로그인</a></li>
+                    <li><a href="join.html">회원가입</a></li>
+                    <li><a href="login.html">개인정보 수정</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="login-form">
+                <h1>로그인</h1>
+                <form>
+                    <input type="text" name="email" class="text-field" placeholder="아이디 또는 이메일주소">
+                    <input type="password" name="password" class="text-field" placeholder="비밀번호">
+                    <input type="submit" value="로그인" class="submit-btn">
+                </form>
+
+                <div class="links">
+                    <a href="#">비밀번호를 잊어버리셨나요?</a>
+                </div>
+
+                <div class="linkss">
+                    <a href="#">회원가입</a>|
+                    <a href="#">아이디/비밀번호 찾기</a>
+                </div>
+
+                <div class="sns">
+                   <div class="hrs">
+                        <hr><p>소셜미디어 계정으로 로그인</p><hr>
+                   </div>
+
+                    <form>
+                        <button type="button" onclick="location.href='#'" id="kakao"><i class="fa-solid fa-comment"> 카카오 계정으로 로그인</i></button>
+                        <button type="button" onclick="location.href='#'" id="naver"><i class="fa-solid fa-n"> 네이버 계정으로 로그인</i></button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <aside id="e">
+            <ul>
+                <li><a href="#">맛추억 문의 |</a></li>
+                <li><a href="#">이용약관 |</a></li>
+                <li><a href="#">개인정보처리방침 |</a></li>
+                <li><a href="#">1:1문의 |</a></li>
+            </ul>
+
+            <select class="familysite">
+                <option value="sitelist">관련사이트</option>
+                <option value="sitelist">관련사이트</option>
+                <option value="sitelist">관련사이트</option>
+                <option value="sitelist">관련사이트</option>
+            </select>
+        </aside>
+
+        <footer>
+            <p>
+                샘표식품(주) | 주소 : 서울특별시 중구 충무로2
+                (우편번호 : 04557) | 맛추억 운영 사무국 : 02-3393-5645 ~ 7 (평일 : 9:00 ~ 17:00 / 점심시간 12:30 ~ 13:30)
+                Copyright ⓒ 샘표식품, All Rights Reserved.
+            </p>
+        </footer>
+    </div>
+    <a href="#" id="topbtn"><img src="images/logo2.PNG"></a>
+</body>
+
+</html>
